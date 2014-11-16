@@ -5,7 +5,8 @@
 ## 3) set the value of the inverse(solve)
 ## 4) get the value of the inverse(solve)
 
-## This function creates a special "matrix" object that can cache its inverse
+## This function creates a special "matrix" object that can cache its inverse.
+## To you the function, you must assign it to a (list) variable.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -23,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function computes the inverse of the special "matrix" returned by
-## makeCacheMatrix above. If the inverse has already been calculated
+## makeCacheMatrix above (use variable that "makeCacheMatrix" function was 
+## assigned to). If the inverse has already been calculated
 ## (and the matrix has not changed), then cacheSolve should retrieve the
 ## inverse from the cache.
 
